@@ -12,6 +12,8 @@ def calculate_damage(weapon,distance):
             elif 31>=distance >=4:
                damage = base_damage
                return f"Total damage:{damage}"
+            elif distance < 0:
+             return "Invalid distance! Distance cannot be negative."
             else: 
                return "Attack missed! Target out of range"
         case "sword":
@@ -21,7 +23,9 @@ def calculate_damage(weapon,distance):
                 return f"Total damage:{damage}"
             elif 0<=distance<=7:
                 damage = base_damage    
-                return f"Total damage:{damage}"       
+                return f"Total damage:{damage}"
+            elif distance < 0:
+             return "Invalid distance! Distance cannot be negative."       
             else:
                 return "Attack missed! Target out of range"
         case "spell":
@@ -32,6 +36,8 @@ def calculate_damage(weapon,distance):
             elif 31>=distance >=4 :
              damage = base_damage
              return f"Total damage:{damage}"
+            elif distance < 0:
+             return "Invalid distance! Distance cannot be negative."
             else:
               return "Attack missed! Target out of range"                
         case _:
