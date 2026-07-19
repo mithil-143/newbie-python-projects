@@ -19,7 +19,7 @@ def calculate_damage(weapon,distance):
             if 0<= distance <=5:
                 damage = base_damage*1.5
                 return f"Total damage:{damage}"
-            elif 6<=distance<=7:
+            elif 0<=distance<=7:
                 damage = base_damage    
                 return f"Total damage:{damage}"       
             else:
